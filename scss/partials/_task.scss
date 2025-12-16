@@ -3,10 +3,17 @@
 
 .new-task-card {
     background-color: $clr-light-bg;
+    padding: 24px 0;
 
     .card-header {
         @include display(flex);
         .mark-as-read {
+
+        }
+    }
+
+    .card-content {
+        .info {
 
         }
     }
