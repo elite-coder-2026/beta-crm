@@ -1,0 +1,6 @@
+@import "partials/mixins";
+
+.checkbox-icon {
+    background: url("../images/unchecked.svg") no-repeat center center transparent;
+    @include size(20px, 20px)
+}
