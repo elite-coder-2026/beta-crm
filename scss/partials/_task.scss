@@ -1,0 +1,13 @@
+@import "vars";
+@import "mixins";
+
+.new-task-card {
+    background-color: $clr-light-bg;
+
+    .card-header {
+        @include display(flex);
+        .mark-as-read {
+
+        }
+    }
+}
