@@ -6,3 +6,15 @@
     width: $w;
     height: $h;
 }
+
+@mixin display($type) {
+    @if $type == "block" {
+        display: block;
+    } @else if $type == "inline" {
+        display: block;
+    } @else if $type == 'grid' {
+        display: grid;
+    } @else if $type == 'flex' {
+        display: flex;
+    }
+}
