@@ -1,3 +1,9 @@
 .new-task-card {
   background-color: #fff;
+  padding: 24px 0;
+}
+.new-task-card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
