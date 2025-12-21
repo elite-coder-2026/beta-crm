@@ -1,0 +1,23 @@
+@import "mixins";
+@import "vars";
+
+.kanban-app {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    border-right: 1px solid red;
+
+    .sidebar {
+        width: 84px;
+    }
+
+    .task-list {
+        width: 330px;
+    }
+
+    .main-content {
+        width: 1152px;
+        background-color: $clr-main-content-bg;
+    }
+}
