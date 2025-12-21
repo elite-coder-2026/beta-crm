@@ -1,2 +1,10 @@
 @import "partials/mixins";
 @import "partials/task";
+@import "partials/kanban";
+@import "partials/_kanban-item.scss";
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f2f2f2;
+
+}
