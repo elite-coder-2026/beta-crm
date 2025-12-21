@@ -20,6 +20,29 @@ const queries = {
 
     },
 
+    tasks: {
+        getAllTasks: `
+            select *
+            from beta_crm_db.tasks t
+            left join beta_crm_db.users assigned_to  on t.assigned_to = assigned_to.id
+            left join beta_crm_db.users created_by  on t.assigned_to = created_by.id
+            left join beta_crm_db.companies c on t.company_id = c.id
+            left join beta_crm_db.deals c on t.deal_id = deal_id
+        `
+    },
+
+    search: {
+        searchUsers: `
+            select t.id,
+                   t.f_name,
+                   t.l_name
+            from beta_crm_db.users t
+            where t.l_name = $1 and t.f_name = $2
+        `,
+
+        searchGroups: ``
+    },
+
     cte: {
         getTeamHierarchy: `
             with recursive org_chart as (
