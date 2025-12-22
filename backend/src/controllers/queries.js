@@ -1,3 +1,6 @@
+const generateId = () => {
+}
+
 const queries = {
     permissions: {
         getUserPermsAndTeam: `
