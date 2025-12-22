@@ -35,8 +35,19 @@ const queries = {
             left join beta_crm_db.users assigned_to  on t.assigned_to = assigned_to.id
             left join beta_crm_db.users created_by  on t.assigned_to = created_by.id
             left join beta_crm_db.companies c on t.company_id = c.id
-            left join beta_crm_db.deals d on t.deal_id = deal_id
+                
+            -- fixme: find out what is 
+            left join beta_crm_db.deals d on t.deal_id = deal.id
             left join beta_crm_db.contacts ct on t.contact_id = contact_id
+        `,
+
+        getTaskById: `
+            select *
+            from beta_crm_db.tasks t 
+            left join beta_crm_db.users assigned_to  on t.assigned_to = assigned_to.id
+            left join beta_crm_db.users created_by  on t.assigned_to = created_by.id
+            
+            
         `
     },
 
