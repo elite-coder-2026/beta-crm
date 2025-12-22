@@ -14,7 +14,7 @@
     "db:reset": "node src/database/migrate.js down && node src/database/migrate.js up && node src/database/seeds/seed.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["testing"],
   "repository": "https://github.com/elite-coder-2026/beta-crm-react.git",
   "author": "",
   "license": "ISC",
