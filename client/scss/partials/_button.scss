@@ -1,0 +1,15 @@
+@import "vars";
+@import "mixins";
+
+//- its time for a cigarette
+
+/* button styles */
+button {
+    &.primary-btn {
+        @include set-text-color($clr-primary-btn-text);
+        @include set-bg-color($clr-primary-btn-text);
+    }
+
+    &.secondary-btn {
+    }
+}
