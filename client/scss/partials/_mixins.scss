@@ -22,3 +22,7 @@
 @mixin set-text-color($color) {
     color: $color;
 }
+
+@mixin set-bg-color($color) {
+    background-color: $color;
+}
