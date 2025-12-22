@@ -2,7 +2,8 @@
 @import "partials/task";
 @import "partials/kanban";
 @import "partials/_kanban-item.scss";
-
+@import "partials/_button.scss";
+@import "partials/_form.scss";
 body {
     font-family: "Inter", sans-serif;
     background-color: #f2f2f2;
