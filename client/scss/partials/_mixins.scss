@@ -18,3 +18,7 @@
         display: flex;
     }
 }
+
+@mixin set-text-color($color) {
+    color: $color;
+}
