@@ -1,0 +1,13 @@
+"filename", "language", "Markdown", "HTML", "SCSS", "XML", "PostCSS", "TypeScript", "comment", "blank", "total"
+"/Users/darrellparkhouse/development/beta-crm/backend/src/controllers/queries.js", "TypeScript", 0, 0, 0, 0, 0, 1, 0, 0, 1
+"/Users/darrellparkhouse/development/beta-crm/claude.md", "Markdown", 49, 0, 0, 0, 0, 0, 0, 22, 71
+"/Users/darrellparkhouse/development/beta-crm/client/css/app.css", "PostCSS", 0, 0, 0, 0, 19, 0, 0, 1, 20
+"/Users/darrellparkhouse/development/beta-crm/client/dashboard-empty.html", "HTML", 0, 0, 0, 0, 0, 0, -1, 0, -1
+"/Users/darrellparkhouse/development/beta-crm/client/images/kanban/kanban-icon.svg", "XML", 0, 0, 0, 3, 0, 0, 0, 1, 4
+"/Users/darrellparkhouse/development/beta-crm/client/kanban-item.html", "HTML", 0, 14, 0, 0, 0, 0, 0, 0, 14
+"/Users/darrellparkhouse/development/beta-crm/client/kanban.html", "HTML", 0, 22, 0, 0, 0, 0, 0, 0, 22
+"/Users/darrellparkhouse/development/beta-crm/client/scss/_icons.scss", "SCSS", 0, 0, 4, 0, 0, 0, 0, 1, 5
+"/Users/darrellparkhouse/development/beta-crm/client/scss/app.scss", "SCSS", 0, 0, 5, 0, 0, 0, 0, 2, 7
+"/Users/darrellparkhouse/development/beta-crm/client/scss/partials/_kanban.scss", "SCSS", 0, 0, 19, 0, 0, 0, 0, 4, 23
+"/Users/darrellparkhouse/development/beta-crm/client/scss/partials/_vars.scss", "SCSS", 0, 0, 7, 0, 0, 0, 0, 2, 9
+"Total", "-", 49, 36, 35, 3, 19, 1, -1, 33, 175

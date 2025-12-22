@@ -1,0 +1,17 @@
+"filename", "language", "HTML", "SCSS", "Markdown", "XML", "JavaScript", "PostCSS", "comment", "blank", "total"
+"/Users/darrellparkhouse/development/beta-crm/.idea/beta-crm.iml", "XML", 0, 0, 0, 8, 0, 0, 0, 0, 8
+"/Users/darrellparkhouse/development/beta-crm/architecture.md", "Markdown", 0, 0, 256, 0, 0, 0, 0, 59, 315
+"/Users/darrellparkhouse/development/beta-crm/backend/server.js", "JavaScript", 0, 0, 0, 0, 39, 0, 6, 9, 54
+"/Users/darrellparkhouse/development/beta-crm/backend/src/config/database.js", "JavaScript", 0, 0, 0, 0, 56, 0, 8, 11, 75
+"/Users/darrellparkhouse/development/beta-crm/backend/src/middleware/errorHandler.js", "JavaScript", 0, 0, 0, 0, 21, 0, 4, 4, 29
+"/Users/darrellparkhouse/development/beta-crm/backend/src/middleware/notFound.js", "JavaScript", 0, 0, 0, 0, 6, 0, 1, 2, 9
+"/Users/darrellparkhouse/development/beta-crm/client/css/app.css", "PostCSS", 0, 0, 0, 0, 0, 9, 0, 0, 9
+"/Users/darrellparkhouse/development/beta-crm/client/images/checked.svg", "XML", 0, 0, 0, 4, 0, 0, 0, 1, 5
+"/Users/darrellparkhouse/development/beta-crm/client/images/unchecked.svg", "XML", 0, 0, 0, 4, 0, 0, 0, 1, 5
+"/Users/darrellparkhouse/development/beta-crm/client/new-task.html", "HTML", 90, 0, 0, 0, 0, 0, 0, 2, 92
+"/Users/darrellparkhouse/development/beta-crm/client/scss/_icons.scss", "SCSS", 0, 5, 0, 0, 0, 0, 0, 1, 6
+"/Users/darrellparkhouse/development/beta-crm/client/scss/app.scss", "SCSS", 0, 2, 0, 0, 0, 0, 0, 0, 2
+"/Users/darrellparkhouse/development/beta-crm/client/scss/partials/_mixins.scss", "SCSS", 0, 18, 0, 0, 0, 0, 0, 2, 20
+"/Users/darrellparkhouse/development/beta-crm/client/scss/partials/_task.scss", "SCSS", 0, 15, 0, 0, 0, 0, 0, 5, 20
+"/Users/darrellparkhouse/development/beta-crm/client/scss/partials/_vars.scss", "SCSS", 0, 2, 0, 0, 0, 0, 0, 0, 2
+"Total", "-", 90, 42, 256, 16, 122, 9, 19, 97, 651

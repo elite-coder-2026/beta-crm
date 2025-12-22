@@ -1,0 +1,18 @@
+"filename", "language", "HTML", "TypeScript", "Markdown", "JavaScript", "MS SQL", "XML", "comment", "blank", "total"
+"/Users/darrellparkhouse/development/beta-crm/backend/README.md", "Markdown", 0, 0, 159, 0, 0, 0, 0, 54, 213
+"/Users/darrellparkhouse/development/beta-crm/backend/src/controllers/queries.js", "TypeScript", 0, 55, 0, 0, 0, 0, 0, 6, 61
+"/Users/darrellparkhouse/development/beta-crm/backend/src/controllers/taskController.js", "JavaScript", 0, 0, 0, 395, 0, 0, 36, 67, 498
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrate.js", "JavaScript", 0, 0, 0, 130, 0, 0, 21, 26, 177
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/001_create_users_table.sql", "MS SQL", 0, 0, 0, 0, 30, 0, 5, 6, 41
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/002_create_companies_table.sql", "MS SQL", 0, 0, 0, 0, 31, 0, 4, 4, 39
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/003_create_contacts_table.sql", "MS SQL", 0, 0, 0, 0, 41, 0, 4, 4, 49
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/004_create_deals_table.sql", "MS SQL", 0, 0, 0, 0, 35, 0, 4, 4, 43
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/005_create_tasks_table.sql", "MS SQL", 0, 0, 0, 0, 34, 0, 4, 4, 42
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/006_create_activities_table.sql", "MS SQL", 0, 0, 0, 0, 34, 0, 4, 4, 42
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/007_create_notes_table.sql", "MS SQL", 0, 0, 0, 0, 20, 0, 4, 4, 28
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/seeds/seed.js", "JavaScript", 0, 0, 0, 109, 0, 0, 11, 17, 137
+"/Users/darrellparkhouse/development/beta-crm/backend/src/models/User.ts", "TypeScript", 0, 37, 0, 0, 0, 0, 0, 3, 40
+"/Users/darrellparkhouse/development/beta-crm/backend/src/models/UserPermissions.ts", "TypeScript", 0, 26, 0, 0, 0, 0, 0, 2, 28
+"/Users/darrellparkhouse/development/beta-crm/client/dashboard-empty.html", "HTML", 12, 0, 0, 0, 0, 0, 1, 0, 13
+"/Users/darrellparkhouse/development/beta-crm/client/images/calendar-icon.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 1, 4
+"Total", "-", 12, 118, 159, 634, 225, 3, 98, 206, 1455

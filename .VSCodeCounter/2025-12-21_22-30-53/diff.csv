@@ -1,0 +1,10 @@
+"filename", "language", "Markdown", "SCSS", "JavaScript", "XML", "HTML", "TypeScript", "comment", "blank", "total"
+"/Users/darrellparkhouse/development/beta-crm/.idea/beta-crm.iml", "XML", 0, 0, 0, 3, 0, 0, 0, 0, 3
+"/Users/darrellparkhouse/development/beta-crm/backend/src/controllers/queries.js", "JavaScript", 0, 0, 79, 0, 0, 0, 0, 7, 86
+"/Users/darrellparkhouse/development/beta-crm/backend/src/controllers/queries.ts", "TypeScript", 0, 0, 0, 0, 0, -56, 0, -6, -62
+"/Users/darrellparkhouse/development/beta-crm/backend/src/services/taskService.js", "JavaScript", 0, 0, 331, 0, 0, 0, 55, 61, 447
+"/Users/darrellparkhouse/development/beta-crm/client/kanban-item.html", "HTML", 0, 0, 0, 0, 19, 0, 2, 1, 22
+"/Users/darrellparkhouse/development/beta-crm/client/scss/app.scss", "SCSS", 0, 1, 0, 0, 0, 0, 0, 0, 1
+"/Users/darrellparkhouse/development/beta-crm/client/scss/partials/_kanban-item.scss", "SCSS", 0, 4, 0, 0, 0, 0, 0, 3, 7
+"/Users/darrellparkhouse/development/beta-crm/design-system.md", "Markdown", 105, 0, 0, 0, 0, 0, 0, 43, 148
+"Total", "-", 105, 5, 410, 3, 19, -56, 57, 109, 652

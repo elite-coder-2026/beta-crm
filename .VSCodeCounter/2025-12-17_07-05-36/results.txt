@@ -1,0 +1,82 @@
+Date : 2025-12-17 07:05:36
+Directory : /Users/darrellparkhouse/development/beta-crm
+Total : 31 files,  1686 codes, 117 comments, 303 blanks, all 2106 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |          7 |        756 |         87 |        136 |        979 |
+| Markdown   |          2 |        415 |          0 |        113 |        528 |
+| MS SQL     |          7 |        225 |         29 |         30 |        284 |
+| TypeScript |          3 |        118 |          0 |         11 |        129 |
+| HTML       |          2 |        102 |          1 |          2 |        105 |
+| SCSS       |          5 |         42 |          0 |          8 |         50 |
+| XML        |          4 |         19 |          0 |          3 |         22 |
+| PostCSS    |          1 |          9 |          0 |          0 |          9 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                         | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                            |         31 |      1,686 |        117 |        303 |      2,106 |
+| . (Files)                                                                                                    |          1 |        256 |          0 |         59 |        315 |
+| .idea                                                                                                        |          1 |          8 |          0 |          0 |          8 |
+| backend                                                                                                      |         18 |      1,258 |        116 |        231 |      1,605 |
+| backend (Files)                                                                                              |          2 |        198 |          6 |         63 |        267 |
+| backend/src                                                                                                  |         16 |      1,060 |        110 |        168 |      1,338 |
+| backend/src/config                                                                                           |          1 |         56 |          8 |         11 |         75 |
+| backend/src/controllers                                                                                      |          2 |        450 |         36 |         73 |        559 |
+| backend/src/database                                                                                         |          9 |        464 |         61 |         73 |        598 |
+| backend/src/database (Files)                                                                                 |          1 |        130 |         21 |         26 |        177 |
+| backend/src/database/migrations                                                                              |          7 |        225 |         29 |         30 |        284 |
+| backend/src/database/seeds                                                                                   |          1 |        109 |         11 |         17 |        137 |
+| backend/src/middleware                                                                                       |          2 |         27 |          5 |          6 |         38 |
+| backend/src/models                                                                                           |          2 |         63 |          0 |          5 |         68 |
+| client                                                                                                       |         11 |        164 |          1 |         13 |        178 |
+| client (Files)                                                                                               |          2 |        102 |          1 |          2 |        105 |
+| client/css                                                                                                   |          1 |          9 |          0 |          0 |          9 |
+| client/images                                                                                                |          3 |         11 |          0 |          3 |         14 |
+| client/scss                                                                                                  |          5 |         42 |          0 |          8 |         50 |
+| client/scss (Files)                                                                                          |          2 |          7 |          0 |          1 |          8 |
+| client/scss/partials                                                                                         |          3 |         35 |          0 |          7 |         42 |
++--------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                     | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/darrellparkhouse/development/beta-crm/.idea/beta-crm.iml                                              | XML        |          8 |          0 |          0 |          8 |
+| /Users/darrellparkhouse/development/beta-crm/architecture.md                                                 | Markdown   |        256 |          0 |         59 |        315 |
+| /Users/darrellparkhouse/development/beta-crm/backend/README.md                                               | Markdown   |        159 |          0 |         54 |        213 |
+| /Users/darrellparkhouse/development/beta-crm/backend/server.js                                               | JavaScript |         39 |          6 |          9 |         54 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/config/database.js                                  | JavaScript |         56 |          8 |         11 |         75 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/controllers/queries.js                              | TypeScript |         55 |          0 |          6 |         61 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/controllers/taskController.js                       | JavaScript |        395 |         36 |         67 |        498 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/database/migrate.js                                 | JavaScript |        130 |         21 |         26 |        177 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/001_create_users_table.sql      | MS SQL     |         30 |          5 |          6 |         41 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/002_create_companies_table.sql  | MS SQL     |         31 |          4 |          4 |         39 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/003_create_contacts_table.sql   | MS SQL     |         41 |          4 |          4 |         49 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/004_create_deals_table.sql      | MS SQL     |         35 |          4 |          4 |         43 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/005_create_tasks_table.sql      | MS SQL     |         34 |          4 |          4 |         42 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/006_create_activities_table.sql | MS SQL     |         34 |          4 |          4 |         42 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/007_create_notes_table.sql      | MS SQL     |         20 |          4 |          4 |         28 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/database/seeds/seed.js                              | JavaScript |        109 |         11 |         17 |        137 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/middleware/errorHandler.js                          | JavaScript |         21 |          4 |          4 |         29 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/middleware/notFound.js                              | JavaScript |          6 |          1 |          2 |          9 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/models/User.ts                                      | TypeScript |         37 |          0 |          3 |         40 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/models/UserPermissions.ts                           | TypeScript |         26 |          0 |          2 |         28 |
+| /Users/darrellparkhouse/development/beta-crm/client/css/app.css                                              | PostCSS    |          9 |          0 |          0 |          9 |
+| /Users/darrellparkhouse/development/beta-crm/client/dashboard-empty.html                                     | HTML       |         12 |          1 |          0 |         13 |
+| /Users/darrellparkhouse/development/beta-crm/client/images/calendar-icon.svg                                 | XML        |          3 |          0 |          1 |          4 |
+| /Users/darrellparkhouse/development/beta-crm/client/images/checked.svg                                       | XML        |          4 |          0 |          1 |          5 |
+| /Users/darrellparkhouse/development/beta-crm/client/images/unchecked.svg                                     | XML        |          4 |          0 |          1 |          5 |
+| /Users/darrellparkhouse/development/beta-crm/client/new-task.html                                            | HTML       |         90 |          0 |          2 |         92 |
+| /Users/darrellparkhouse/development/beta-crm/client/scss/_icons.scss                                         | SCSS       |          5 |          0 |          1 |          6 |
+| /Users/darrellparkhouse/development/beta-crm/client/scss/app.scss                                            | SCSS       |          2 |          0 |          0 |          2 |
+| /Users/darrellparkhouse/development/beta-crm/client/scss/partials/_mixins.scss                               | SCSS       |         18 |          0 |          2 |         20 |
+| /Users/darrellparkhouse/development/beta-crm/client/scss/partials/_task.scss                                 | SCSS       |         15 |          0 |          5 |         20 |
+| /Users/darrellparkhouse/development/beta-crm/client/scss/partials/_vars.scss                                 | SCSS       |          2 |          0 |          0 |          2 |
+| Total                                                                                                        |            |      1,686 |        117 |        303 |      2,106 |
++--------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

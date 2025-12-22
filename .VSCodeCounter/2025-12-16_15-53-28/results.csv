@@ -1,0 +1,11 @@
+"filename", "language", "XML", "HTML", "SCSS", "PostCSS", "comment", "blank", "total"
+"/Users/darrellparkhouse/development/beta-crm/.idea/beta-crm.iml", "XML", 8, 0, 0, 0, 0, 0, 8
+"/Users/darrellparkhouse/development/beta-crm/css/app.css", "PostCSS", 0, 0, 0, 3, 0, 0, 3
+"/Users/darrellparkhouse/development/beta-crm/images/checked.svg", "XML", 4, 0, 0, 0, 0, 1, 5
+"/Users/darrellparkhouse/development/beta-crm/images/unchecked.svg", "XML", 4, 0, 0, 0, 0, 1, 5
+"/Users/darrellparkhouse/development/beta-crm/new-task.html", "HTML", 0, 25, 0, 0, 0, 0, 25
+"/Users/darrellparkhouse/development/beta-crm/scss/app.scss", "SCSS", 0, 0, 2, 0, 0, 0, 2
+"/Users/darrellparkhouse/development/beta-crm/scss/partials/_mixins.scss", "SCSS", 0, 0, 0, 0, 0, 1, 1
+"/Users/darrellparkhouse/development/beta-crm/scss/partials/_task.scss", "SCSS", 0, 0, 4, 0, 0, 1, 5
+"/Users/darrellparkhouse/development/beta-crm/scss/partials/_vars.scss", "SCSS", 0, 0, 1, 0, 0, 0, 1
+"Total", "-", 16, 25, 7, 3, 0, 4, 55

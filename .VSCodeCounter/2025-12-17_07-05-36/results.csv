@@ -1,0 +1,33 @@
+"filename", "language", "HTML", "TypeScript", "JavaScript", "Markdown", "SCSS", "MS SQL", "XML", "PostCSS", "comment", "blank", "total"
+"/Users/darrellparkhouse/development/beta-crm/.idea/beta-crm.iml", "XML", 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 8
+"/Users/darrellparkhouse/development/beta-crm/architecture.md", "Markdown", 0, 0, 0, 256, 0, 0, 0, 0, 0, 59, 315
+"/Users/darrellparkhouse/development/beta-crm/backend/README.md", "Markdown", 0, 0, 0, 159, 0, 0, 0, 0, 0, 54, 213
+"/Users/darrellparkhouse/development/beta-crm/backend/server.js", "JavaScript", 0, 0, 39, 0, 0, 0, 0, 0, 6, 9, 54
+"/Users/darrellparkhouse/development/beta-crm/backend/src/config/database.js", "JavaScript", 0, 0, 56, 0, 0, 0, 0, 0, 8, 11, 75
+"/Users/darrellparkhouse/development/beta-crm/backend/src/controllers/queries.js", "TypeScript", 0, 55, 0, 0, 0, 0, 0, 0, 0, 6, 61
+"/Users/darrellparkhouse/development/beta-crm/backend/src/controllers/taskController.js", "JavaScript", 0, 0, 395, 0, 0, 0, 0, 0, 36, 67, 498
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrate.js", "JavaScript", 0, 0, 130, 0, 0, 0, 0, 0, 21, 26, 177
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/001_create_users_table.sql", "MS SQL", 0, 0, 0, 0, 0, 30, 0, 0, 5, 6, 41
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/002_create_companies_table.sql", "MS SQL", 0, 0, 0, 0, 0, 31, 0, 0, 4, 4, 39
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/003_create_contacts_table.sql", "MS SQL", 0, 0, 0, 0, 0, 41, 0, 0, 4, 4, 49
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/004_create_deals_table.sql", "MS SQL", 0, 0, 0, 0, 0, 35, 0, 0, 4, 4, 43
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/005_create_tasks_table.sql", "MS SQL", 0, 0, 0, 0, 0, 34, 0, 0, 4, 4, 42
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/006_create_activities_table.sql", "MS SQL", 0, 0, 0, 0, 0, 34, 0, 0, 4, 4, 42
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/007_create_notes_table.sql", "MS SQL", 0, 0, 0, 0, 0, 20, 0, 0, 4, 4, 28
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/seeds/seed.js", "JavaScript", 0, 0, 109, 0, 0, 0, 0, 0, 11, 17, 137
+"/Users/darrellparkhouse/development/beta-crm/backend/src/middleware/errorHandler.js", "JavaScript", 0, 0, 21, 0, 0, 0, 0, 0, 4, 4, 29
+"/Users/darrellparkhouse/development/beta-crm/backend/src/middleware/notFound.js", "JavaScript", 0, 0, 6, 0, 0, 0, 0, 0, 1, 2, 9
+"/Users/darrellparkhouse/development/beta-crm/backend/src/models/User.ts", "TypeScript", 0, 37, 0, 0, 0, 0, 0, 0, 0, 3, 40
+"/Users/darrellparkhouse/development/beta-crm/backend/src/models/UserPermissions.ts", "TypeScript", 0, 26, 0, 0, 0, 0, 0, 0, 0, 2, 28
+"/Users/darrellparkhouse/development/beta-crm/client/css/app.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 9
+"/Users/darrellparkhouse/development/beta-crm/client/dashboard-empty.html", "HTML", 12, 0, 0, 0, 0, 0, 0, 0, 1, 0, 13
+"/Users/darrellparkhouse/development/beta-crm/client/images/calendar-icon.svg", "XML", 0, 0, 0, 0, 0, 0, 3, 0, 0, 1, 4
+"/Users/darrellparkhouse/development/beta-crm/client/images/checked.svg", "XML", 0, 0, 0, 0, 0, 0, 4, 0, 0, 1, 5
+"/Users/darrellparkhouse/development/beta-crm/client/images/unchecked.svg", "XML", 0, 0, 0, 0, 0, 0, 4, 0, 0, 1, 5
+"/Users/darrellparkhouse/development/beta-crm/client/new-task.html", "HTML", 90, 0, 0, 0, 0, 0, 0, 0, 0, 2, 92
+"/Users/darrellparkhouse/development/beta-crm/client/scss/_icons.scss", "SCSS", 0, 0, 0, 0, 5, 0, 0, 0, 0, 1, 6
+"/Users/darrellparkhouse/development/beta-crm/client/scss/app.scss", "SCSS", 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2
+"/Users/darrellparkhouse/development/beta-crm/client/scss/partials/_mixins.scss", "SCSS", 0, 0, 0, 0, 18, 0, 0, 0, 0, 2, 20
+"/Users/darrellparkhouse/development/beta-crm/client/scss/partials/_task.scss", "SCSS", 0, 0, 0, 0, 15, 0, 0, 0, 0, 5, 20
+"/Users/darrellparkhouse/development/beta-crm/client/scss/partials/_vars.scss", "SCSS", 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2
+"Total", "-", 102, 118, 756, 415, 42, 225, 19, 9, 117, 303, 2106
