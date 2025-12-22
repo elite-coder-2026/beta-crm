@@ -1,0 +1,23 @@
+@import "vars";
+@import "mixins";
+
+/***** form styles *****/
+form {
+    &.comment-form {
+        background: $clr-comment-form-bg;
+
+        .button-group {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &.login {
+        border: 1px solid $clr-base-border;
+
+        @include set-bg-color(transparent);
+    }
+    
+    &.register {}
+}
