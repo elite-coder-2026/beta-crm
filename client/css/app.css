@@ -23,6 +23,24 @@
   background-color: #F5F5FA;
 }
 
+/* button styles */
+button.primary-btn {
+  color: #fff;
+  background-color: #fff;
+}
+/***** form styles *****/
+form.comment-form {
+  background: #F5F5FA;
+}
+form.comment-form .button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+form.login {
+  border: 1px solid #ececf3;
+  background-color: transparent;
+}
 body {
   font-family: "Inter", sans-serif;
   background-color: #f2f2f2;
