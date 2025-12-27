@@ -9,28 +9,40 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <div class="kanban-item">
-        <div class="task-header">
-            <div class="title"></div>
-            <p class="sub-title"></p>
-            
-            <!----- todo: find out the best way to create this menu ----->
-            <ul class="utility-menu">
-                <li>
-                    <a href="#" class="menu-link"></a>
-                </li>
-            </ul>
-        </div>
-        <div class="task-body">
-            <div class="prg">
-                <div class="icon">
-                    <div class="prg-icon"></div>
+    <div class="kanban-card">
+        <div class="col" id="todo">
+            <div class="col-header">
+                <div class="title">To do</div>
+                <div class="add">
+                    <div class="icon">
+                        <div class="add-icon"></div>
+                    </div>
+                    <span class="text">add new task</span>
                 </div>
-                <!----- todo: its time for me to smoke more weed ----->
-                <label for="progress"></label>
-                <progress class="progress" id="progress" value="0" max="100"></progress>cd
-            </div> <!----- end of .prg ----->
-        </div> <!----- end of .task-body ----->
+            </div>
+        </div>
+        <div class="col" id="in-progress">
+            <div class="col-header">
+                <div class="title">To do</div>
+                <div class="add">
+                    <div class="icon">
+                        <div class="add-icon"></div>
+                    </div>
+                    <span class="text">add new task</span>
+                </div>
+            </div>
+        </div>
+        <div class="col" id="complegste">
+            <div class="col-header">
+                <div class="title">To do</div>
+                <div class="add">
+                    <div class="icon">
+                        <div class="add-icon"></div>
+                    </div>
+                    <span class="text">add new task</span>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
