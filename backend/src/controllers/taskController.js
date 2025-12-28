@@ -1,5 +1,5 @@
-const { query, getClient } = require('../config/database');
-const queries = require('./queries');
+const { query } = require('../config/database');
+import { tasks } from './queries'
 /**
  * Get all tasks with optional filtering
  * GET /api/tasks
@@ -18,26 +18,7 @@ const getAllTasks = async (req, res, next) => {
       offset = 0
     } = req.query;
 
-    let sql = `
-      SELECT
-        t.*,
-        u1.first_name as assigned_to_first_name,
-        u1.last_name as assigned_to_last_name,
-        u1.email as assigned_to_email,
-        u2.first_name as created_by_first_name,
-        u2.last_name as created_by_last_name,
-        c.name as company_name,
-        ct.first_name as contact_first_name,
-        ct.last_name as contact_last_name,
-        d.title as deal_title
-      FROM tasks t
-      LEFT JOIN users u1 ON t.assigned_to = u1.id
-      LEFT JOIN users u2 ON t.created_by = u2.id
-      LEFT JOIN companies c ON t.company_id = c.id
-      LEFT JOIN contacts ct ON t.contact_id = ct.id
-      LEFT JOIN deals d ON t.deal_id = d.id
-      WHERE 1=1
-    `;
+    let sql = tasks.getAllTasks;
 
     const params = [];
     let paramCount = 1;
@@ -108,26 +89,7 @@ const getTaskById = async (req, res, next) => {
   try {
     const { id } = req.params;
 
-    const sql = `
-      SELECT
-        t.*,
-        u1.first_name as assigned_to_first_name,
-        u1.last_name as assigned_to_last_name,
-        u1.email as assigned_to_email,
-        u2.first_name as created_by_first_name,
-        u2.last_name as created_by_last_name,
-        c.name as company_name,
-        ct.first_name as contact_first_name,
-        ct.last_name as contact_last_name,
-        d.title as deal_title
-      FROM tasks t
-      LEFT JOIN users u1 ON t.assigned_to = u1.id
-      LEFT JOIN users u2 ON t.created_by = u2.id
-      LEFT JOIN companies c ON t.company_id = c.id
-      LEFT JOIN contacts ct ON t.contact_id = ct.id
-      LEFT JOIN deals d ON t.deal_id = d.id
-      WHERE t.id = $1
-    `;
+    const sql = tasks.getTaskById
 
     const result = await query(sql, [id]);
 
@@ -174,14 +136,7 @@ const createTask = async (req, res, next) => {
       });
     }
 
-    const sql = `
-      INSERT INTO tasks (
-        title, description, status, priority, due_date,
-        assigned_to, created_by, company_id, contact_id, deal_id
-      )
-      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
-      RETURNING *
-    `;
+    const sql = tasks.createTask;
 
     const params = [
       title,
@@ -228,7 +183,7 @@ const updateTask = async (req, res, next) => {
     } = req.body;
 
     // Check if task exists
-    const checkResult = await query('SELECT id FROM tasks WHERE id = $1', [id]);
+    const checkResult = await query(tasks.checkIfTaskExists, [id]);
 
     if (checkResult.rows.length === 0) {
       return res.status(404).json({
@@ -309,13 +264,13 @@ const updateTask = async (req, res, next) => {
     }
 
     params.push(id);
-    const sql = `
-      UPDATE tasks
-      SET ${updates.join(', ')}
-      WHERE id = $${paramCount}
-      RETURNING *
-    `;
 
+    // todo: im going to leave this query right here
+    const sql = `
+      update beta_crm_db.tasks t
+         set ${updates.join(', ')}
+         where t.id = ${paramCount}
+    `
     const result = await query(sql, params);
 
     res.json({
@@ -337,7 +292,7 @@ const deleteTask = async (req, res, next) => {
     const { id } = req.params;
 
     const result = await query(
-      'DELETE FROM tasks WHERE id = $1 RETURNING id',
+      tasks.deleteTask,
       [id]
     );
 
@@ -366,19 +321,7 @@ const getTasksByAssignedUser = async (req, res, next) => {
     const { userId } = req.params;
     const { status, priority } = req.query;
 
-    let sql = `
-      SELECT
-        t.*,
-        u.first_name as assigned_to_first_name,
-        u.last_name as assigned_to_last_name,
-        c.name as company_name,
-        d.title as deal_title
-      FROM tasks t
-      LEFT JOIN users u ON t.assigned_to = u.id
-      LEFT JOIN companies c ON t.company_id = c.id
-      LEFT JOIN deals d ON t.deal_id = d.id
-      WHERE t.assigned_to = $1
-    `;
+    let sql = tasks.getTasksByAssignedUser
 
     const params = [userId];
     let paramCount = 2;
@@ -417,18 +360,7 @@ const getOverdueTasks = async (req, res, next) => {
   try {
     const { assigned_to } = req.query;
 
-    let sql = `
-      SELECT
-        t.*,
-        u.first_name as assigned_to_first_name,
-        u.last_name as assigned_to_last_name,
-        c.name as company_name
-      FROM tasks t
-      LEFT JOIN users u ON t.assigned_to = u.id
-      LEFT JOIN companies c ON t.company_id = c.id
-      WHERE t.due_date < CURRENT_TIMESTAMP
-        AND t.status != 'completed'
-    `;
+    let sql = tasks.getOverdueTask
 
     const params = [];
 
@@ -459,14 +391,7 @@ const completeTask = async (req, res, next) => {
   try {
     const { id } = req.params;
 
-    const sql = `
-      UPDATE tasks
-      SET status = 'completed', completed_at = CURRENT_TIMESTAMP
-      WHERE id = $1
-      RETURNING *
-    `;
-
-    const result = await query(sql, [id]);
+    const result = await query(tasks.completedTasks, [id]);
 
     if (result.rows.length === 0) {
       return res.status(404).json({
