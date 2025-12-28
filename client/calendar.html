@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar - BetaCRM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="calendar-app">
+        <!-- Sidebar with Icons -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="icon"><div class="logo-icon"></div></div>
+            </div>
+            <nav class="nav-icons">
+                <ul>
+                    <li><a href="dashboard.html"><div class="icon"><div class="dashboard-icon"></div></div></a></li>
+                    <li><a href="kanban.html"><div class="icon"><div class="kanban-icon"></div></div></a></li>
+                    <li class="active"><a href="calendar.html"><div class="icon"><div class="calendar-icon"></div></div></a></li>
+                    <li><a href="#"><div class="icon"><div class="tasks-icon"></div></div></a></li>
+                    <li><a href="#"><div class="icon"><div class="settings-icon"></div></div></a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <div class="icon"><div class="user-icon"></div></div>
+            </div>
+        </aside>
+
+        <!-- Meetings List -->
+        <div class="meetings-list">
+            <div class="meetings-header">
+                <h3>Upcoming Meetings</h3>
+                <button class="add-meeting-btn">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 3.33334V12.6667M3.33334 8H12.6667" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="meetings-content" id="meetingsList">
+                <!-- Meetings will be populated by JavaScript -->
+                <div class="meeting-item">
+                    <div class="meeting-time">10:00 AM</div>
+                    <div class="meeting-details">
+                        <h4>Team Standup</h4>
+                        <p>Daily sync with development team</p>
+                        <div class="meeting-attendees">
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                        </div>
+                    </div>
+                    <div class="meeting-status ongoing">Ongoing</div>
+                </div>
+
+                <div class="meeting-item">
+                    <div class="meeting-time">2:00 PM</div>
+                    <div class="meeting-details">
+                        <h4>Client Presentation</h4>
+                        <p>Q4 results review with stakeholders</p>
+                        <div class="meeting-attendees">
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                        </div>
+                    </div>
+                    <div class="meeting-status upcoming">Upcoming</div>
+                </div>
+
+                <div class="meeting-item">
+                    <div class="meeting-time">4:30 PM</div>
+                    <div class="meeting-details">
+                        <h4>Design Review</h4>
+                        <p>Review new dashboard mockups</p>
+                        <div class="meeting-attendees">
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                        </div>
+                    </div>
+                    <div class="meeting-status upcoming">Upcoming</div>
+                </div>
+            </div>
+
+            <div class="meetings-footer">
+                <a href="#" class="view-all-link">View all meetings</a>
+            </div>
+        </div>
+
+        <!-- Main Calendar Component -->
+        <div class="main-calendar">
+            <div class="calendar-header">
+                <div class="calendar-title-section">
+                    <h1 id="currentMonthYear">December 2025</h1>
+                    <div class="view-options">
+                        <button class="view-btn active" data-view="month">Month</button>
+                        <button class="view-btn" data-view="week">Week</button>
+                        <button class="view-btn" data-view="day">Day</button>
+                    </div>
+                </div>
+                <div class="calendar-actions">
+                    <button class="btn-secondary" id="todayBtn">Today</button>
+                    <div class="nav-controls">
+                        <button class="nav-btn" id="prevMonth">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="nav-btn" id="nextMonth">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calendar-grid-container">
+                <!-- Weekday Headers -->
+                <div class="calendar-weekdays">
+                    <div class="weekday-header">Sunday</div>
+                    <div class="weekday-header">Monday</div>
+                    <div class="weekday-header">Tuesday</div>
+                    <div class="weekday-header">Wednesday</div>
+                    <div class="weekday-header">Thursday</div>
+                    <div class="weekday-header">Friday</div>
+                    <div class="weekday-header">Saturday</div>
+                </div>
+
+                <!-- Calendar Grid -->
+                <div class="calendar-grid" id="calendarGrid">
+                    <!-- Calendar days will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/calendar.js"></script>
+</body>
+</html>
