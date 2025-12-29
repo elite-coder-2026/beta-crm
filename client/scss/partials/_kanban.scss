@@ -2,22 +2,25 @@
 @import "vars";
 
 .kanban-app {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    border-right: 1px solid red;
+    @include display('flex');
+    gap: 50px;
 
     .sidebar {
-        width: 84px;
+        padding: 25px;
+        border-right: 1px solid darken(#ECECFa, 8%);
+        height: 804px;
+
+        .icon-list {
+            list-style: none;
+            margin-top: 10px;
+
+            li {
+                padding: 11px;
+            }
+        }
     }
 
-    .task-list {
-        width: 330px;
-    }
+    .tasks-overview {}
 
-    .main-content {
-        width: 1152px;
-        background-color: $clr-main-content-bg;
-    }
+    .main-content {}
 }
