@@ -1,0 +1,10 @@
+"filename", "language", "SCSS", "PostCSS", "HTML", "JavaScript", "comment", "blank", "total"
+"/Users/darrellparkhouse/development/beta-crm/backend/src/controllers/queries.js", "JavaScript", 0, 0, 0, 6, 0, 3, 9
+"/Users/darrellparkhouse/development/beta-crm/client/css/app.css", "PostCSS", 0, 21, 0, 0, 2, 1, 24
+"/Users/darrellparkhouse/development/beta-crm/client/post.html", "HTML", 0, 0, 75, 0, 2, 6, 83
+"/Users/darrellparkhouse/development/beta-crm/client/scss/app.scss", "SCSS", 8, 0, 0, 0, 0, 0, 8
+"/Users/darrellparkhouse/development/beta-crm/client/scss/partials/_button.scss", "SCSS", 10, 0, 0, 0, 2, 3, 15
+"/Users/darrellparkhouse/development/beta-crm/client/scss/partials/_form.scss", "SCSS", 17, 0, 0, 0, 1, 5, 23
+"/Users/darrellparkhouse/development/beta-crm/client/scss/partials/_mixins.scss", "SCSS", 6, 0, 0, 0, 0, 2, 8
+"/Users/darrellparkhouse/development/beta-crm/client/scss/partials/_vars.scss", "SCSS", 4, 0, 0, 0, 0, 1, 5
+"Total", "-", 45, 21, 75, 6, 7, 21, 175

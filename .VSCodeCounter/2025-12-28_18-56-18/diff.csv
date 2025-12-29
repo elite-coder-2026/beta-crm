@@ -1,0 +1,28 @@
+"filename", "language", "HTML", "SCSS", "XML", "JavaScript", "PostCSS", "MS SQL", "comment", "blank", "total"
+"/Users/darrellparkhouse/development/beta-crm/backend/server.js", "JavaScript", 0, 0, 0, 2, 0, 0, 2, 2, 6
+"/Users/darrellparkhouse/development/beta-crm/backend/src/controllers/authController.js", "JavaScript", 0, 0, 0, 218, 0, 0, 46, 39, 303
+"/Users/darrellparkhouse/development/beta-crm/backend/src/controllers/queries.js", "JavaScript", 0, 0, 0, 55, 0, 0, 3, 10, 68
+"/Users/darrellparkhouse/development/beta-crm/backend/src/controllers/taskController.js", "JavaScript", 0, 0, 0, -75, 0, 0, 1, -1, -75
+"/Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/008_create_refresh_tokens_table.sql", "MS SQL", 0, 0, 0, 0, 0, 16, 5, 5, 26
+"/Users/darrellparkhouse/development/beta-crm/backend/src/middleware/auth.js", "JavaScript", 0, 0, 0, 104, 0, 0, 20, 23, 147
+"/Users/darrellparkhouse/development/beta-crm/backend/src/models/RefreshToken.js", "JavaScript", 0, 0, 0, 73, 0, 0, 40, 12, 125
+"/Users/darrellparkhouse/development/beta-crm/backend/src/models/User.js", "JavaScript", 0, 0, 0, 72, 0, 0, 48, 18, 138
+"/Users/darrellparkhouse/development/beta-crm/backend/src/routes/authRoutes.js", "JavaScript", 0, 0, 0, 11, 0, 0, 30, 8, 49
+"/Users/darrellparkhouse/development/beta-crm/backend/src/utils/jwt.js", "JavaScript", 0, 0, 0, 91, 0, 0, 32, 15, 138
+"/Users/darrellparkhouse/development/beta-crm/client/calendar.html", "HTML", 130, 0, 0, 0, 0, 0, 7, 10, 147
+"/Users/darrellparkhouse/development/beta-crm/client/css/app.css", "PostCSS", 0, 0, 0, 0, 489, 0, 0, 17, 506
+"/Users/darrellparkhouse/development/beta-crm/client/images/[Navigation] Web/Logo.svg", "XML", 0, 0, 13, 0, 0, 0, 0, 1, 14
+"/Users/darrellparkhouse/development/beta-crm/client/images/[Navigation] Web/beta-crm-logo.svg", "XML", 0, 0, 13, 0, 0, 0, 0, 1, 14
+"/Users/darrellparkhouse/development/beta-crm/client/images/dashboard/checklist.svg", "XML", 0, 0, 3, 0, 0, 0, 0, 1, 4
+"/Users/darrellparkhouse/development/beta-crm/client/images/dashboard/work.svg", "XML", 0, 0, 3, 0, 0, 0, 0, 1, 4
+"/Users/darrellparkhouse/development/beta-crm/client/images/kanban/help-center-icon.svg", "XML", 0, 0, 3, 0, 0, 0, 0, 1, 4
+"/Users/darrellparkhouse/development/beta-crm/client/images/kanban/white-ui-store-logo.svg", "XML", 0, 0, 9, 0, 0, 0, 0, 1, 10
+"/Users/darrellparkhouse/development/beta-crm/client/js/calendar.js", "JavaScript", 0, 0, 0, 225, 0, 0, 34, 53, 312
+"/Users/darrellparkhouse/development/beta-crm/client/kanban-item.html", "HTML", -20, 0, 0, 0, 0, 0, -2, 0, -22
+"/Users/darrellparkhouse/development/beta-crm/client/kanban.html", "HTML", 74, 0, 0, 0, 0, 0, 0, 8, 82
+"/Users/darrellparkhouse/development/beta-crm/client/scss/_icons.scss", "SCSS", 0, 29, 0, 0, 0, 0, 0, 6, 35
+"/Users/darrellparkhouse/development/beta-crm/client/scss/app.scss", "SCSS", 0, 2, 0, 0, 0, 0, 0, 0, 2
+"/Users/darrellparkhouse/development/beta-crm/client/scss/partials/_calendar.scss", "SCSS", 0, 430, 0, 0, 0, 0, 5, 78, 513
+"/Users/darrellparkhouse/development/beta-crm/client/scss/partials/_kanban.scss", "SCSS", 0, -10, 0, 0, 0, 0, 0, 0, -10
+"/Users/darrellparkhouse/development/beta-crm/client/scss/partials/_vars.scss", "SCSS", 0, 20, 0, 0, 0, 0, 0, 4, 24
+"Total", "-", 184, 471, 44, 776, 489, 16, 271, 313, 2564

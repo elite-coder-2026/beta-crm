@@ -140,21 +140,21 @@ const queries = {
 
     cte: {
         getTeamHierarchy: `
-            with recursive org_chart as (select u,
-                                                id,
-                                                u.f_name,
-                                                u.l_name,
-                                                u.manager_id,
-                                                u.role,
-                                                1 as level
-                                         from beta_crm_db.users u
-                                         where u.manager_id is null
-
-                                         union all
-
-                                         select *
-                                         from beta_crm_db.users u
-                                                  inner join org_chart oc on u.manager_id = oc.id)
+            with recursive org_chart as (
+                select  u.id,
+                        u.f_name,
+                        u.l_name,
+                        u.manager_id,
+                        u.role,
+                        1 as level
+                 from beta_crm_db.users u
+                 where u.manager_id is null
+    
+                 union all
+    
+                 select *
+                 from beta_crm_db.users u
+                          inner join org_chart oc on u.manager_id = oc.id)
             select *
             from org_chart
             order by level, l_name

@@ -23,10 +23,16 @@ app.get('/health', (req, res) => {
   });
 });
 
-// API Routes will be added here
+// Import routes
+const authRoutes = require('./src/routes/authRoutes');
+
+// API Routes
 app.get('/api', (req, res) => {
   res.json({ message: 'Welcome to Beta CRM API' });
 });
+
+// Auth routes
+app.use('/api/auth', authRoutes);
 
 // 404 handler
 app.use((req, res) => {

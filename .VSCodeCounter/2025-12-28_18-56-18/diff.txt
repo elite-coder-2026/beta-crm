@@ -1,0 +1,76 @@
+Date : 2025-12-28 18:56:18
+Directory : /Users/darrellparkhouse/development/beta-crm
+Total : 26 files,  1980 codes, 271 comments, 313 blanks, all 2564 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |         10 |        776 |        256 |        179 |      1,211 |
+| PostCSS    |          1 |        489 |          0 |         17 |        506 |
+| SCSS       |          5 |        471 |          5 |         88 |        564 |
+| HTML       |          3 |        184 |          5 |         18 |        207 |
+| XML        |          6 |         44 |          0 |          6 |         50 |
+| MS SQL     |          1 |         16 |          5 |          5 |         26 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                             | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                |         26 |      1,980 |        271 |        313 |      2,564 |
+| backend                                                                                                          |         10 |        567 |        227 |        131 |        925 |
+| backend (Files)                                                                                                  |          1 |          2 |          2 |          2 |          6 |
+| backend/src                                                                                                      |          9 |        565 |        225 |        129 |        919 |
+| backend/src/controllers                                                                                          |          3 |        198 |         50 |         48 |        296 |
+| backend/src/database                                                                                             |          1 |         16 |          5 |          5 |         26 |
+| backend/src/database/migrations                                                                                  |          1 |         16 |          5 |          5 |         26 |
+| backend/src/middleware                                                                                           |          1 |        104 |         20 |         23 |        147 |
+| backend/src/models                                                                                               |          2 |        145 |         88 |         30 |        263 |
+| backend/src/routes                                                                                               |          1 |         11 |         30 |          8 |         49 |
+| backend/src/utils                                                                                                |          1 |         91 |         32 |         15 |        138 |
+| client                                                                                                           |         16 |      1,413 |         44 |        182 |      1,639 |
+| client (Files)                                                                                                   |          3 |        184 |          5 |         18 |        207 |
+| client/css                                                                                                       |          1 |        489 |          0 |         17 |        506 |
+| client/images                                                                                                    |          6 |         44 |          0 |          6 |         50 |
+| client/images/[Navigation] Web                                                                                   |          2 |         26 |          0 |          2 |         28 |
+| client/images/dashboard                                                                                          |          2 |          6 |          0 |          2 |          8 |
+| client/images/kanban                                                                                             |          2 |         12 |          0 |          2 |         14 |
+| client/js                                                                                                        |          1 |        225 |         34 |         53 |        312 |
+| client/scss                                                                                                      |          5 |        471 |          5 |         88 |        564 |
+| client/scss (Files)                                                                                              |          2 |         31 |          0 |          6 |         37 |
+| client/scss/partials                                                                                             |          3 |        440 |          5 |         82 |        527 |
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                         | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/darrellparkhouse/development/beta-crm/backend/server.js                                                   | JavaScript |          2 |          2 |          2 |          6 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/controllers/authController.js                           | JavaScript |        218 |         46 |         39 |        303 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/controllers/queries.js                                  | JavaScript |         55 |          3 |         10 |         68 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/controllers/taskController.js                           | JavaScript |        -75 |          1 |         -1 |        -75 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/database/migrations/008_create_refresh_tokens_table.sql | MS SQL     |         16 |          5 |          5 |         26 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/middleware/auth.js                                      | JavaScript |        104 |         20 |         23 |        147 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/models/RefreshToken.js                                  | JavaScript |         73 |         40 |         12 |        125 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/models/User.js                                          | JavaScript |         72 |         48 |         18 |        138 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/routes/authRoutes.js                                    | JavaScript |         11 |         30 |          8 |         49 |
+| /Users/darrellparkhouse/development/beta-crm/backend/src/utils/jwt.js                                            | JavaScript |         91 |         32 |         15 |        138 |
+| /Users/darrellparkhouse/development/beta-crm/client/calendar.html                                                | HTML       |        130 |          7 |         10 |        147 |
+| /Users/darrellparkhouse/development/beta-crm/client/css/app.css                                                  | PostCSS    |        489 |          0 |         17 |        506 |
+| /Users/darrellparkhouse/development/beta-crm/client/images/[Navigation] Web/Logo.svg                             | XML        |         13 |          0 |          1 |         14 |
+| /Users/darrellparkhouse/development/beta-crm/client/images/[Navigation] Web/beta-crm-logo.svg                    | XML        |         13 |          0 |          1 |         14 |
+| /Users/darrellparkhouse/development/beta-crm/client/images/dashboard/checklist.svg                               | XML        |          3 |          0 |          1 |          4 |
+| /Users/darrellparkhouse/development/beta-crm/client/images/dashboard/work.svg                                    | XML        |          3 |          0 |          1 |          4 |
+| /Users/darrellparkhouse/development/beta-crm/client/images/kanban/help-center-icon.svg                           | XML        |          3 |          0 |          1 |          4 |
+| /Users/darrellparkhouse/development/beta-crm/client/images/kanban/white-ui-store-logo.svg                        | XML        |          9 |          0 |          1 |         10 |
+| /Users/darrellparkhouse/development/beta-crm/client/js/calendar.js                                               | JavaScript |        225 |         34 |         53 |        312 |
+| /Users/darrellparkhouse/development/beta-crm/client/kanban-item.html                                             | HTML       |        -20 |         -2 |          0 |        -22 |
+| /Users/darrellparkhouse/development/beta-crm/client/kanban.html                                                  | HTML       |         74 |          0 |          8 |         82 |
+| /Users/darrellparkhouse/development/beta-crm/client/scss/_icons.scss                                             | SCSS       |         29 |          0 |          6 |         35 |
+| /Users/darrellparkhouse/development/beta-crm/client/scss/app.scss                                                | SCSS       |          2 |          0 |          0 |          2 |
+| /Users/darrellparkhouse/development/beta-crm/client/scss/partials/_calendar.scss                                 | SCSS       |        430 |          5 |         78 |        513 |
+| /Users/darrellparkhouse/development/beta-crm/client/scss/partials/_kanban.scss                                   | SCSS       |        -10 |          0 |          0 |        -10 |
+| /Users/darrellparkhouse/development/beta-crm/client/scss/partials/_vars.scss                                     | SCSS       |         20 |          0 |          4 |         24 |
+| Total                                                                                                            |            |      1,980 |        271 |        313 |      2,564 |
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

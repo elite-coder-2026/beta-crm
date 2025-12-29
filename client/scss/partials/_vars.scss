@@ -2,15 +2,41 @@ $clr-light-bg: #fff;
 $clr-card-footer-bg: #F5F5FA;
 $clr-body-bg: #F5F5FA;
 $clr-main-content-bg: #F5F5FA;
+$clr-base-border: #ECECF3;
 
 $clr-base-border: #ececf3;
 $clr-muted-text: #8181A5;
 
 $clr-primary-btn-text: #fff;
+$clr-calendar-text: #1a1a1a;
+
+$clr-due-date-bg: #FFEBEE;
+$clr-due-date-text: #FE808B;
 
 $clr-comment-form-bg: #F5F5FA;
 $clr-icon: #8181A5;
 $clr-primary: #5E81F4;
+$clr-primary-hover: darken($clr-primary, 10%);
+$clr-warning: #F3BE5F;
+$clr-success: #7DE7AD;
+$clr-danger: #FE808B;
+$clr-info: #30E4F6;
+
 $colors: (
-    'ligh-bg': $clr-light-bg
-)
+    'icon': $clr-icon,
+        'primary': $clr-primary,
+        'primary-hover': $clr-primary-hover,
+        'warning': $clr-warning,
+        'success': $clr-success,
+        'danger': $clr-danger,
+        'info': $clr-info,
+        'base-border': $clr-base-border,
+);
+
+button {
+    background-color: map-get($colors, primary);
+
+    &:hover {
+        background-color: map-get($colors, primary-hover);
+    }
+}

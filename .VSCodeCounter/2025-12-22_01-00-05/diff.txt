@@ -1,0 +1,44 @@
+Date : 2025-12-22 01:00:05
+Directory : /Users/darrellparkhouse/development/beta-crm
+Total : 8 files,  147 codes, 7 comments, 21 blanks, all 175 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| HTML       |          1 |         75 |          2 |          6 |         83 |
+| SCSS       |          5 |         45 |          3 |         11 |         59 |
+| PostCSS    |          1 |         21 |          2 |          1 |         24 |
+| JavaScript |          1 |          6 |          0 |          3 |          9 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                            | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                               |          8 |        147 |          7 |         21 |        175 |
+| backend                                                                         |          1 |          6 |          0 |          3 |          9 |
+| backend/src                                                                     |          1 |          6 |          0 |          3 |          9 |
+| backend/src/controllers                                                         |          1 |          6 |          0 |          3 |          9 |
+| client                                                                          |          7 |        141 |          7 |         18 |        166 |
+| client (Files)                                                                  |          1 |         75 |          2 |          6 |         83 |
+| client/css                                                                      |          1 |         21 |          2 |          1 |         24 |
+| client/scss                                                                     |          5 |         45 |          3 |         11 |         59 |
+| client/scss (Files)                                                             |          1 |          8 |          0 |          0 |          8 |
+| client/scss/partials                                                            |          4 |         37 |          3 |         11 |         51 |
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                        | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/darrellparkhouse/development/beta-crm/backend/src/controllers/queries.js | JavaScript |          6 |          0 |          3 |          9 |
+| /Users/darrellparkhouse/development/beta-crm/client/css/app.css                 | PostCSS    |         21 |          2 |          1 |         24 |
+| /Users/darrellparkhouse/development/beta-crm/client/post.html                   | HTML       |         75 |          2 |          6 |         83 |
+| /Users/darrellparkhouse/development/beta-crm/client/scss/app.scss               | SCSS       |          8 |          0 |          0 |          8 |
+| /Users/darrellparkhouse/development/beta-crm/client/scss/partials/_button.scss  | SCSS       |         10 |          2 |          3 |         15 |
+| /Users/darrellparkhouse/development/beta-crm/client/scss/partials/_form.scss    | SCSS       |         17 |          1 |          5 |         23 |
+| /Users/darrellparkhouse/development/beta-crm/client/scss/partials/_mixins.scss  | SCSS       |          6 |          0 |          2 |          8 |
+| /Users/darrellparkhouse/development/beta-crm/client/scss/partials/_vars.scss    | SCSS       |          4 |          0 |          1 |          5 |
+| Total                                                                           |            |        147 |          7 |         21 |        175 |
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

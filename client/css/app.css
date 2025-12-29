@@ -1,3 +1,10 @@
+button {
+  background-color: #5E81F4;
+}
+button:hover {
+  background-color: #2e5cf1;
+}
+
 .checkbox-icon {
   background: url("../images/unchecked.svg") no-repeat center center transparent;
   width: 20px;
@@ -51,6 +58,13 @@
   border-radius: 8px;
 }
 
+button {
+  background-color: #5E81F4;
+}
+button:hover {
+  background-color: #2e5cf1;
+}
+
 .new-task-card {
   background-color: #fff;
   padding: 24px 0;
@@ -58,22 +72,34 @@
 .new-task-card .card-header {
   display: flex;
 }
+button {
+  background-color: #5E81F4;
+}
+button:hover {
+  background-color: #2e5cf1;
+}
+
 .kanban-app {
-  width: 100%;
   display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  border-right: 1px solid red;
+  gap: 50px;
 }
 .kanban-app .sidebar {
-  width: 84px;
+  padding: 25px;
+  border-right: 1px solid #ccccf2;
+  height: 804px;
 }
-.kanban-app .task-list {
-  width: 330px;
+.kanban-app .sidebar .icon-list {
+  list-style: none;
+  margin-top: 10px;
 }
-.kanban-app .main-content {
-  width: 1152px;
-  background-color: #F5F5FA;
+.kanban-app .sidebar .icon-list li {
+  padding: 11px;
+}
+button {
+  background-color: #5E81F4;
+}
+button:hover {
+  background-color: #2e5cf1;
 }
 
 /* button styles */
@@ -81,6 +107,13 @@ button.primary-btn {
   color: #fff;
   background-color: #fff;
 }
+button {
+  background-color: #5E81F4;
+}
+button:hover {
+  background-color: #2e5cf1;
+}
+
 /***** form styles *****/
 form.comment-form {
   background: #F5F5FA;
@@ -94,6 +127,13 @@ form.login {
   border: 1px solid #ececf3;
   background-color: transparent;
 }
+button {
+  background-color: #5E81F4;
+}
+button:hover {
+  background-color: #2e5cf1;
+}
+
 .calendar-app {
   display: grid;
   grid-template-columns: 80px 320px 1fr;
@@ -278,7 +318,7 @@ form.login {
   transition: color 0.2s ease;
 }
 .meetings-list .meetings-footer .view-all-link:hover {
-  color: rgb(46.261627907, 91.6395348837, 240.738372093);
+  color: #2e5cf1;
 }
 
 .main-calendar {
@@ -529,5 +569,3 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
-/*# sourceMappingURL=app.css.map */

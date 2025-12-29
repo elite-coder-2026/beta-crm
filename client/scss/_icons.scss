@@ -9,3 +9,38 @@
     background: url('../images/kanban/kanban-icon.svg') no-repeat center center transparent;
     @include size(20px, 20px)
 }
+
+.calendar-icon {
+    background: url('../images/calendar-icon.svg') no-repeat center center transparent;
+    @include size(24px, 24px)
+}
+
+.dashboard-icon {
+    background: #8181A5;
+    @include size(24px, 24px);
+    border-radius: 4px;
+}
+
+.tasks-icon {
+    background: #8181A5;
+    @include size(24px, 24px);
+    border-radius: 4px;
+}
+
+.settings-icon {
+    background: #8181A5;
+    @include size(24px, 24px);
+    border-radius: 50%;
+}
+
+.user-icon {
+    background: #8181A5;
+    @include size(40px, 40px);
+    border-radius: 50%;
+}
+
+.logo-icon {
+    background: #5E81F4;
+    @include size(40px, 40px);
+    border-radius: 8px;
+}
