@@ -7,9 +7,15 @@
 @import "partials/_button.scss";
 @import "partials/_form.scss";
 @import "partials/_calendar.scss";
+@import "partials/_mobile-comments.scss";
+
 body {
     font-family: "Inter", sans-serif;
     background-color: #f2f2f2;
+
+    &.dark-mobile {
+        background-color: #2E3032;
+    }
 
 }
 
