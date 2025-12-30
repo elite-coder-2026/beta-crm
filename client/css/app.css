@@ -58,6 +58,18 @@ button:hover {
   border-radius: 8px;
 }
 
+.sys-menu {
+  background: url("../images/mobile-comments/menu-icon.svg") no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.sm-search-icon {
+  background: url("../images/mobile-comments/search-icon.svg") no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
 button {
   background-color: #5E81F4;
 }
@@ -559,9 +571,68 @@ button:hover {
     padding: 2px 6px;
   }
 }
+.mobile-comments {
+  width: 375px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.mobile-comments header {
+  background-color: #1B1D1F;
+  height: 86px;
+  padding: 24px;
+}
+.mobile-comments header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mobile-comments header ul li {
+  padding: 11px;
+}
+.mobile-comments .main-content {
+  background: #111315;
+  width: 375px;
+  height: 1181px;
+  padding: 24px 16px;
+}
+.mobile-comments .main-content .section-title {
+  font-size: 32px;
+  line-height: 40px;
+  color: #EFEFEF;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.mobile-comments .main-content .card {
+  background-color: #1B1D1F;
+  width: 100%;
+  height: 700px;
+  padding: 16px;
+}
+.mobile-comments .main-content .comment-search .input-bg {
+  background-color: #272B31;
+  padding: 12px 8px;
+  border-radius: 12px;
+  display: flex;
+}
+.mobile-comments .main-content .comment-search input {
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  width: 100%;
+}
+.mobile-comments .main-content .comments-list {
+  list-style: none;
+}
+.mobile-comments .main-content .comments-list .comment {
+  color: #EFEFEF;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background-color: #f2f2f2;
+}
+body.dark-mobile {
+  background-color: #2E3032;
 }
 
 * {
