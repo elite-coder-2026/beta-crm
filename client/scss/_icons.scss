@@ -44,3 +44,15 @@
     @include size(40px, 40px);
     border-radius: 8px;
 }
+
+.sys-menu {
+    background: url('../images/mobile-comments/menu-icon.svg') no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.sm-search-icon {
+    background: url('../images/mobile-comments/search-icon.svg') no-repeat;
+    width: 24px;
+    height: 24px;
+}
