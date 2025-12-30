@@ -1,0 +1,70 @@
+$clr-header-bg: #1B1D1F;
+$clr-card-bg: #1B1D1F;
+$clr-input-bg: #272B31;
+$clr-comment-text: #EFEFEF;
+.mobile-comments {
+    width: 375px;
+    margin-top: 50px;
+    margin-left: 50px;
+    header {
+        background-color: $clr-header-bg;
+        height: 86px;
+        padding: 24px;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            li {
+                padding: 11px;
+            }
+        }
+    }
+
+    .main-content {
+        background: #111315;
+        width: 375px;
+        height: 1181px;
+        padding: 24px 16px;
+
+        .section-title {
+            font-size: 32px;
+            line-height: 40px;
+            color: #EFEFEF;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: $clr-card-bg;
+            width: 100%;
+            height: 700px;
+            padding: 16px;
+        }
+
+        .comment-search {
+            .input-bg {
+                background-color: $clr-input-bg;
+                padding: 12px 8px;
+                border-radius: 12px;
+                display: flex;
+            }
+            input {
+                background-color: transparent;
+                border: none;
+                margin-left: 10px;
+                width: 100%;
+            }
+        }
+
+        .comments-list {
+            list-style: none;
+
+            .comment {
+                color: $clr-comment-text;
+            }
+        }
+    }
+
+}
