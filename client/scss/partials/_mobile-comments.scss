@@ -58,12 +58,38 @@ $clr-comment-text: #EFEFEF;
             }
         }
 
-        .comments-list {
+       ul.comments-list {
             list-style: none;
 
+           li {
+               display: flex;
+               flex-direction: row;
+
+               .right {
+                   .left {
+                       display: flex;
+                       flex-wrap: wrap;
+
+                       .time-ago {
+                           margin-left: auto;
+                       }
+                   }
+               }
+           }
             .comment {
                 color: $clr-comment-text;
             }
+
+           .user-name {
+               color: #FCFCFC;
+               font-size: 14px;
+           }
+
+           .category,
+           .time-ago {
+               color: #fcfcfc;
+               font-size: 13px;
+           }
         }
     }
 
