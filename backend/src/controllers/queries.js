@@ -92,14 +92,7 @@ const queries = {
     tasks: {
 
 
-        getTaskById: `
-            select *
-            from beta_crm_db.tasks t
-                     left join beta_crm_db.users assigned_to on t.assigned_to = assigned_to.id
-                     left join beta_crm_db.users created_by on t.assigned_to = created_by.id
 
-
-        `,
 
 
     },
@@ -160,4 +153,49 @@ const queries = {
             order by level, l_name
         `
     }
+}
+
+export const contacts = {
+    getAllContacts: `
+        select c.id,
+               c.first_name,
+               c.last_name,
+               c.email,
+               c.phone,    c.job_title,
+               c.lead_status,
+               comp.id,
+               c.created_at,
+               c.updated_at,
+               count(*) over() as total_count
+               
+        from beta_crm_db.contacts c
+        left join beta_crm_db.companies comp on c.id = comp.id
+    `,
+    getById: `
+        select c.*
+               
+        from beta_crm_db.contacts c
+        left join beta_crm_db.companies comp on c.id = comp.id
+        left join beta_crm_db.activities a on a.contact_id
+    `,
+    create: ``,
+
+    update: ``,
+
+    delete: `
+        delete from beta_crm_db.contacts 
+        where id = $1
+        returning id, first_name, last_name, email
+    `,
+
+    getStats: `
+        select 
+            count(*) as total_contacts,
+            count(*) filter (where status = 'active') as active_contacts,
+            count(*) filter(where status = 'inactive') as inactive_contacts,
+            count(*) filter (created_at >= now() - interval '30 days' ) as new_this_month,
+            count(distinct company_id) as unique_companies
+        from beta_crm_db.contacts c
+        where c.status != 'completed'
+    `
 }
