@@ -131,28 +131,6 @@ const queries = {
         searchGroups: ``
     },
 
-    cte: {
-        getTeamHierarchy: `
-            with recursive org_chart as (
-                select  u.id,
-                        u.f_name,
-                        u.l_name,
-                        u.manager_id,
-                        u.role,
-                        1 as level
-                 from beta_crm_db.users u
-                 where u.manager_id is null
-    
-                 union all
-    
-                 select *
-                 from beta_crm_db.users u
-                          inner join org_chart oc on u.manager_id = oc.id)
-            select *
-            from org_chart
-            order by level, l_name
-        `
-    }
 }
 
 export const contacts = {
@@ -172,15 +150,37 @@ export const contacts = {
         left join beta_crm_db.companies comp on c.id = comp.id
     `,
     getById: `
-        select c.*
-               
+        select c.*,
+               comp.name as company_name,
+               comp.industry as company_undestry,
+               json_agg(
+                    json_build_object(
+                        'id': a.id,
+                        'type': a.type,
+                        'subject': a.subject,
+                        'due_date': a.due_date,
+                        'status': a.status,
+                    ) order by a.due_date desc
+               ) filter (where a.id is not null) as recent_activity
         from beta_crm_db.contacts c
         left join beta_crm_db.companies comp on c.id = comp.id
-        left join beta_crm_db.activities a on a.contact_id
+        left join beta_crm_db.activities a on a.contact_id = c.id
+        where c.id = $1
+        group by c.id, 
+                 comp.name, 
+                 comp.industry
     `,
-    create: ``,
+    create: `
+        insert into beta_crm_db.contacts (first_name, last_name, email, phone, mobile, job_title, department, company_id, owner_id, address_line1, address_line2, city, state, postal_code, country, linkedin_url, twitter_url, description, lead_src, lead_status, status, created_at, updated_at) 
+        values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, now(), now())
+        returning *
+    `,
 
     update: ``,
+
+    checkExisting: `
+        select * from beta_crm_db.contacts c where c.id = $1
+    `,
 
     delete: `
         delete from beta_crm_db.contacts 
@@ -193,9 +193,22 @@ export const contacts = {
             count(*) as total_contacts,
             count(*) filter (where status = 'active') as active_contacts,
             count(*) filter(where status = 'inactive') as inactive_contacts,
-            count(*) filter (created_at >= now() - interval '30 days' ) as new_this_month,
+            count(*) filter (where created_at >= now() - interval '30 days' ) as new_this_month,
             count(distinct company_id) as unique_companies
         from beta_crm_db.contacts c
         where c.status != 'completed'
     `
+};
+
+export const search = {
+    contacts: `
+        select id, 
+               first_name || ' ' || last_name as label, 
+               email 
+        from beta_crm_db.contacts 
+        where status != 'deleted'
+            and (first_name ILIKE $1 or last_name ILIKE $2 or email ilike $1)
+        order by first_name, last_name
+        limit $2
+    `,
 }
