@@ -202,13 +202,92 @@ export const contacts = {
 
 export const search = {
     contacts: `
-        select id, 
-               first_name || ' ' || last_name as label, 
-               email 
-        from beta_crm_db.contacts 
-        where status != 'deleted'
-            and (first_name ILIKE $1 or last_name ILIKE $2 or email ilike $1)
-        order by first_name, last_name
-        limit $2
+       select 
+           'contact' as type,
+           id,
+           first_name || ' ' || last_name as name,
+           email,
+           phone,
+           company_id
+       from beta_crm_db.contacts
+       where status != 'deleted'
+            and (
+                first_name ilike $1 or
+                last_name ilike $1 or
+                email ilike $1 or
+                phone ilike $1
+           )
+       order by
+           case
+                when first_name ilike $2 then 1
+                when last_name ilike $3 then 1
+                else 3
+            end
+       limit $3
     `,
+}
+
+export const user_workload = {
+    getAllTasksForUser: `
+        select a.*,
+               
+               c.id as contact_id,
+               c.first_name || ' ' || last_name as name,
+               c.email as contact_email,
+               
+               comp.id as company_id,
+               comp.name as company_name,
+               comp.industry as company_undestry,
+               
+               d.id as deal_id,
+               d.title as deal_title,
+               d.value as deal_value,
+               d.status as deal_status,
+               
+               case
+                    when a.due_date < now() and a.activity_status != 'completed' then extract(day from now() - a.due_date)::integer
+                    else 0
+               end as days_overdue,
+            
+               case
+                   when a.due_date >= now() and a.activity_status != 'completed' then extract(day from now() - a.due_date)::integer
+                   else 0
+            end as days_until_due
+        
+        from 
+            beta_crm_db.activities a 
+        
+        left join beta_crm_db.contacts c on a.contact_id = c.id
+        left join beta_crm_db.companies comp on c.id = comp.id
+        left join beta_crm_db.deals d on a.deal_id = d.id
+        where a.owner_id = $1
+    `,
+
+    getTasksByProject: `
+
+        select
+            coalesce(comp.id, 0) as project_id,
+            coalesce(comp.name, 'no company') as project_name,
+            count(*) as total_tasks,
+            count(*) filter (where activity_status = 'pending') as pending_tasks,
+            count(*) filter (where activity_status = 'in_progress') as pending_tasks,
+            count(*) filter (where activity_status = 'completed') as overdue_tasks,
+            min(a.due_date) filter (where a.activity_status = 'completed') as next_due_date,
+            json_agg(
+                json_build_object(
+                    'id', a.id,
+                    'subject', a.subject,
+                    'due_date', a.due_date,
+                    'activity_status', a.activity_status,
+                    'priority', a.priority,
+                    'type', a.activity_type,
+                ) order by due_date
+            ) filter ( where a.activity_status != 'completed' ) as tasks
+        from beta_crm_db.activities a
+        left join beta_crm_db.companies comp on a.company_id = comp.id
+        where a.owner_id = $1
+            and a.activity_status != 'completed'
+        group by comp.id, comp.name
+        order by overdue_tasks desc
+    `
 }
