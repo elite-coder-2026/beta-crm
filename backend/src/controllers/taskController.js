@@ -1,5 +1,6 @@
 const { query } = require('../config/database');
-import { tasks } from './queries'
+// const { tasks } = require('./queries');
+import {tasks} from './queries/tasks.query.js'
 /**
  * Get all tasks with optional filtering
  * GET /api/tasks
@@ -265,12 +266,12 @@ const updateTask = async (req, res, next) => {
 
     params.push(id);
 
-    // todo: im going to leave this query right here
     const sql = `
-      update beta_crm_db.tasks t
-         set ${updates.join(', ')}
-         where t.id = ${paramCount}
-    `
+      update beta_crm_db.tasks
+         set ${updates.join(', ')}, updated_at = current_timestamp
+         where id = $${paramCount}
+         returning *
+    `;
     const result = await query(sql, params);
 
     res.json({
@@ -410,6 +411,41 @@ const completeTask = async (req, res, next) => {
   }
 };
 
+/**
+ * Get task statistics
+ * GET /api/tasks/stats
+ */
+const getTaskStats = async (req, res, next) => {
+  try {
+    const { assigned_to, created_by } = req.query;
+
+    let sql = tasks.getTaskStats;
+    const params = [];
+    let paramCount = 1;
+
+    if (assigned_to) {
+      sql += ` AND assigned_to = $${paramCount}`;
+      params.push(assigned_to);
+      paramCount++;
+    }
+
+    if (created_by) {
+      sql += ` AND created_by = $${paramCount}`;
+      params.push(created_by);
+      paramCount++;
+    }
+
+    const result = await query(sql, params);
+
+    res.json({
+      success: true,
+      data: result.rows[0]
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
 module.exports = {
   getAllTasks,
   getTaskById,
@@ -418,5 +454,6 @@ module.exports = {
   deleteTask,
   getTasksByAssignedUser,
   getOverdueTasks,
-  completeTask
+  completeTask,
+  getTaskStats
 };
