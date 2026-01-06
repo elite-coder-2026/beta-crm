@@ -13,5 +13,12 @@ export const contacts = {
             c.first_name,
             c.last_name,
             c.email
+    `,
+
+    getStats: `
+        select
+            count(*) as total_contacts,
+            count(*) filter (where c.status = 'active') as active_contacts
+        from beta_crm_db.contacts c where c.status = $1
     `
 }
